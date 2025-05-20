@@ -66,17 +66,17 @@ uma sequencia recursiva
 * Senão, soma os dois anteriores: F(n-1) + F(n-2) */
 
 
-int fibo(int nao){
-    if(nao == 0)
+int fibo(int N){
+    if(N <= 0)
     {
-        return 0;
+        return 0; // essa é a minha condição de parada
     }
-    else if(nao == 1)
+    else if(N == 1)
     {
-        return 1;
+        return 1; // essa é a minha condição de parada
     }
     else
     {
-        return fibo(nao-1) + fibo(nao-2);
+        return fibo(N-1) + fibo(N-2);
     }
 }
